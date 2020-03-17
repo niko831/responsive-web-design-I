@@ -1,3 +1,394 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+body {
+	width: 100%;
+}
+
+header {
+	width: 100%;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: silver;
+	display: flex;
+	font-size: 14px;
+	width: 8%;
+}
+
+
+.logo {
+	display: flex;
+	width: 13%;
+}
+
+#intlogo {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.firstdiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+h1 {
+	width: 100%;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0%;
+	margin-right: 0%;
+}
+
+button {
+	width: 100%;
+	border: black solid 1.2px;
+	background-color: white;
+	color: black;
+	font-family: 'Titillium Web', sans-serif;
+	padding: 0.3% 0% 0.3% 0%;
+}
+
+.seconddiv {
+	padding-top: 0%;
+	padding-bottom: 0%;
+	width: 30%;
+	margin-left: 0%;
+}
+
+
+h2 {
+	font-weight: bold;
+}
+
+
+#featabout {
+	border-top: black solid 1.5px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 5% 0% 0% 0%;
+}
+
+.fa {
+	margin-top: 5%;
+	width: 100%;
+}
+
+.middle-img {
+	width: 60%;
+	margin: 2% 0% 0% 20%;
+}
+
+#seprvi {
+	border-bottom: black solid 1.5px;
+	width: 100%;
+	display: flex;
+	justify-content: start;
+	margin: 2% 0% 0% 0%;
+	padding-bottom: 3%;
+}
+
+.spv {
+	width: 33%;
+}
+
+footer {
+	width: 100%;
+}
+
+#cr {
+	text-align: center;
+}
+
+@media (max-width: 500px){
+    body{
+		width: 100%;
+		margin: 0% 3% 0% 3%;
+	}
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+    }
+    a {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		border-bottom: 1px solid silver;
+		padding: 2% 0% 2% 0%; 
+    }
+    .logodiv {
+        display: flex;
+        width: 100%;
+		justify-content: center;
+		border-bottom: 1px solid silver;
+    }
+    .logo {
+		width: 80%;
+		padding-bottom: 3%;
+    }
+    #intlogo {
+        display: flex;
+        flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+        width: 100%;
+	}
+	h1 {
+		text-align: center;
+		font-size: 2vh;
+		width: 100%;
+		padding-top: 10%;
+		margin-right: 20%;
+	}
+	button {
+		align-items: center;
+		width: 37%;
+		margin-bottom: 10%;
+	}
+    .firstdiv {
+        width: 50%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.seconddiv {
+		display: none;
+	}
+	#featabout {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+	.fa {
+		width: 100%;
+	}
+	.middle-img{
+		width: 100%;
+	}
+	#seprvi {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.spv, #spv2{
+		width: 100%;
+		margin-bottom: 10%;
+	}
+
+	footer {
+		width: 100%;
+		margin: 10% 0% 10% 0%;
+	}
+
+	#cr {
+		margin-top: 10%;
+	}
+}
+@media (max-width: 800px){
+	p {
+		font-size: 2vh;
+	}
+	
+	body {
+		width: 94%;
+		margin: 0% 3% 0% 3%;
+	}
+	nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+		width: 100%;
+		margin-top: 5%;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+		justify-content: center;
+		width: 100%;
+    }
+    a {
+		display: flex;
+		justify-content: center;
+		font-size: 2vh;
+		width: 100%;
+		padding: 2% 0% 2% 0%; 
+    }
+    .logodiv {
+        display: flex;
+        width: 100%;
+		justify-content: center;
+    }
+    .logo {
+		width: 25%;
+		padding-bottom: 3%;
+    }
+    #intlogo {
+        display: flex;
+        flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+        width: 100%;
+	}
+	h1 {
+		text-align: center;
+		width: 30%;
+		font-size: 10vh;
+		padding-top: 5%;
+	}
+	h2 {
+		font-size: 2.3vh;
+	}
+	button {
+		align-items: center;
+		width: 20%;
+		margin-bottom: 6%;
+		padding: 0.3% 0% 0.3% 0%;
+		border: 1px solid black;
+		font-size: 1.5vh;
+	}
+    .firstdiv {
+        width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.seconddiv {
+		display: none;
+	}
+	#featabout {
+		display: flex;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0% 2% 0% 2%;
+		border-top: 1px solid black;
+		justify-content: space-evenly;
+	}
+	.fa {
+		width: 47%;
+		margin-top: 5%;
+	}
+	.middle-img{
+		width: 100%;
+		margin: 5% 0% 5% 0%;
+	}
+	#seprvi {
+		display: flex;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0% 2% 0% 2%;
+		justify-content: space-evenly;
+	}
+	.spv, #spv2{
+		width: 30%;
+		margin-bottom: 10%;
+	}
+
+	footer {
+		width: 100%;
+		margin: 5% 0% 5% 0%;
+	}
+
+	address {
+		font-size: 2vh;
+	}
+
+	#cr {
+		margin-top: 5%;
+	}
+}
